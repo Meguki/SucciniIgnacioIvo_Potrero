@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meguki Portfolio</title>
+    <link href="./public/css/bootstrap.css" rel="stylesheet">
+    <link href="./public/css/master.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--HACE QUE FUNCIONE JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Meguki</a>
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--AGREGAR LINKS DE LA PAGINA-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactme">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="home">
+      <!--SECCION INTRO-->
+      <div class="body-section-intro">
+        <div class="body-section-intro-text">
+          <h1>Meguki</h1>
+          <h3>Front-end web development</h3>
+        </div>
+        <div class="body-section-intro-img">
+          <img src="./public/img/web-page-source-code-white.png" alt="Code">
+        </div>
+      </div>
+      <!--SECCION ABOUT ME-->
+      <div id="aboutme" class="body-section-aboutme">
+        <div class="barra">
+          <h2>About me</h2>
+        </div>
+        <div class="body-section-aboutme-contenido">
+          <div class="body-section-aboutme-contenido-intro">
+            <img src="./public/img/Megu.png" alt="Megu">
+          </div>
+          <div class="body-section-aboutme-contenido-parrafo">
+            <p>I'm a web developer in love with videogames and development that it's always learning and improving to bring the best to you.</p>
+            <p>I specialize (and always improving on them) on the next languages ​​to bring the most clean and good looking coding for your needs.</p>
+          </div>
+        </div>
+        <div class="body-section-aboutme-img">
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col">
+              <div class="card bg-dark text-white" id="card-html">
+                <img src="./public/img/html.png" class="card-img" id="img-html" alt="HTML">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white" id="card-js">
+                <img src="./public/img/js.png" class="card-img" id="img-js" alt="JS">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white" id="card-css">
+                <img src="./public/img/css.png" class="card-img" id="img-css" alt="CSS">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--SECCION PROJECTS-->
+      <div id="projects" class="body-section-projects">
+        <div class="barra">
+          <h2>Projects</h2>
+        </div>
+        <div class="contenido">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!--CADA TARJETA NECESITA 2 CLICKS PARA ABRIR LA PRIMERA VEZ, NO ENCONTRE SOLUCION, LUEGO DE ESO FUNCIONAN CON 1 SOLO CLICK PARA ABRIR O CERRAR-->
+            <div onclick="hideshowbank()" class="col">
+              <div class="card bg-dark text-white">
+                <img src="./public/img/bank.jpeg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white" id="bankinfo">
+                  <h5 class="card-title">Purity Credit Union</h5>
+                  <p class="card-text">At Purity Credit Union, we are committed to ensuring our policies, products and programs all align to our purpose of making financial lives better for those we serve.</p>
+                  <script>
+                    function hideshowbank() {
+                      var x = document.getElementById("bankinfo");
+                      if (x.style.display === "none") {
+                        x.style.display = "flex";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div onclick="hideshowfood()" class="col">
+              <div class="card bg-dark text-white">
+                <img src="./public/img/food.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white" id="foodinfo">
+                  <h5 class="card-title">The Crown - Bar & Resto</h5>
+                  <p class="card-text">The Crown Bar & Resto martinis are legendary and as quoted by the New York Times, 'one of the world's best'.</p>
+                  <script>
+                    function hideshowfood() {
+                      var x = document.getElementById("foodinfo");
+                      if (x.style.display === "none") {
+                        x.style.display = "flex";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div onclick="hideshowdraw()" class="col">
+              <div class="card bg-dark text-white">
+                <img src="./public/img/draw.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white" id="drawinfo">
+                  <h5 class="card-title">Cubehouse arquitecture</h5>
+                  <p class="card-text">We are Cubehouse, an unconventional architecture practice. We use design, research and fabrication for creative and social impact.</p>
+                  <script>
+                    function hideshowdraw() {
+                      var x = document.getElementById("drawinfo");
+                      if (x.style.display === "none") {
+                        x.style.display = "flex";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div onclick="hideshowmovie()" class="col">
+              <div class="card bg-dark text-white">
+                <img src="./public/img/movie.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-white" id="movieinfo">
+                  <h5 class="card-title">Dawn of the Others (Movie)</h5>
+                  <p class="card-text">Are you ready for the extintion?</p>
+                  <script>
+                    function hideshowmovie() {
+                      var x = document.getElementById("movieinfo");
+                      if (x.style.display === "none") {
+                        x.style.display = "flex";
+                      } else {
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SECCION CONTACT ME-->
+      <div id="contactme" class="body-section-contact">
+        <div class="body-section-contact-intro">
+          <p><em>Do you like my work or want to work with together?</em></p>
+        </div>
+        <div class="body-section-contact-content">
+          <div class="body-section-contact-content-a">
+            <button id="contact" type="button" name="button">Contact me</button>
+          </div>
+          <div class="body-section-contact-content-b">
+            <div class="body-section-contact-content-b-socials">
+              <p>Or find me here</p>
+              <div class="socials">
+                <img id="gh" src="./public/img/gh.png" alt="github">
+                <img id="linkedin" src="./public/img/lkin.png" alt="linkedin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
