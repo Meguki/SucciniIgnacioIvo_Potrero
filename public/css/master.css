@@ -29,8 +29,8 @@
 }
 
 body{
-  background-color: #E2257D;
-  background: linear-gradient(#E2257D, #9198e5);
+  background-color: #bc4b80;
+  background: linear-gradient(#bc4b80, #9198e5);
   max-width: 100vw;
   font-family: 'Geo';
   src: url(.././fonts/Geo-Regular.ttf);
@@ -50,7 +50,7 @@ img{
 
 /*NAV*/
 nav{
-  background-color: #E2257D;
+  background-color: #bc4b80;
 }
 .navbar-brand{
   color: #FFFFFF;
@@ -182,7 +182,6 @@ nav{
 
 .col{
   min-width: 30vw;
-  max-height: 75vh;
 }
 
 #bankinfo{
@@ -240,11 +239,19 @@ button{
 }
 
 #contact{
-  width: 50vw;
-  height: 8vh;
+  display: inline-block;
+  width: 80vw;
+  height: 10vh;
   margin-bottom: 2vh;
+  padding-top: 1vh;
   background-color: #535ed6;
   border-radius: 50px 50px 50px 50px;
+  box-shadow: 8px -8px #bc4b80;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #ffffff;
 }
 
 .body-section-contact-content-b-socials{
@@ -298,7 +305,7 @@ button{
     background-color: #6f6f6f;
     border-radius: 50px 50px 50px 50px;
     padding: 3%;
-    box-shadow: 15px -15px #E2257D;
+    box-shadow: 15px -15px #bc4b80;
     font-size: 20px;
   }
 
@@ -331,6 +338,21 @@ button{
 
   .body-section-aboutme{
     font-size: 30px;
+  }
+
+  .body-section-aboutme-img{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .row{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col{
+    min-width: 20vw;
+    max-height: 60vh;
   }
 }
 
